@@ -1,0 +1,62 @@
+body {
+    background-color: teal;
+    font-size: 18;
+}
+
+
+
+
+h1 {
+    font-size: 32;
+    background-color: orange;
+    color: white;
+    width: auto;
+    border: solid 4px;
+
+}
+
+p {
+    padding: 0.5rem;
+}
+
+.container {
+    background-color: tan;
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+.container-two {
+    display: flex;
+}
+
+.gem {
+    margin: 1rem;
+}
+
+#random-number {
+    background-color: lightgreen;
+    height: 150px;
+    width: 200px;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 28;
+}
+
+#wins-losses {
+    background-color: lightblue;
+    height: 150px;
+    width: 100px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+#score {
+    background-color: rgb(72, 206, 72);
+    height: 100px;
+    width: 200px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+
