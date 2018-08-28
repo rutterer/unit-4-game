@@ -17,75 +17,23 @@ var greenGem = Math.floor(Math.random() * 11) + 1;
 
 $("#red-gem").on("click", function() {
     score += redGem;
-    $("#score").text("Your total score is: " + score)
-    
-    if (score === randoTarget) {
-        wins++;
-        alert("You win!")
-        $("#wins").text(wins);
-        reset();
-
-    } else if (score > randoTarget) {
-        losses++;
-        alert("You lose!")
-        $("#losses").text(losses);
-        reset();
-    }
+    logic ();
 
 })
 
 $("#blue-gem").on("click", function () {
     score += blueGem;
-    $("#score").text("Your total score is: " + score)
-
-    if (score === randoTarget) {
-        wins++;
-        alert("You win!")
-        $("#wins").text(wins);
-        reset();
-        
-    } else if (score > randoTarget) {
-        losses++;
-        alert("You lose!")
-        $("#losses").text(losses);
-        reset();
-    }
+    logic ();
 })
 
 $("#yellow-gem").on("click", function() {
     score += yellowGem;
-    $("#score").text("Your total score is: " + score)
-
-    if (score === randoTarget) {
-        wins++;
-        alert("You win!")
-        $("#wins").text(wins);
-        reset();
-        
-    } else if (score > randoTarget) {
-        losses++;
-        alert("You lose!")
-        $("#losses").text(losses);
-        reset();
-    }
+    logic();
 })
 
 $("#green-gem").on("click", function() {
     score += greenGem;
-    $("#score").text("Your total score is: " + score)
-
-    if (score === randoTarget) {
-        wins++;
-        alert("You win!")
-        $("#wins").text(wins);
-        reset();
-        
-    } else if (score > randoTarget) {
-        losses++;
-        alert("You lose!")
-        $("#losses").text(losses);
-        reset();
-    }
+    logic();
 })
 
 
@@ -101,6 +49,24 @@ var reset = function() {
 
     $("#random-number").text(randoTarget);
     $("#score").text("Your total score is: " + score)
+}
+
+var logic = function() {
+    
+    $("#score").text("Your total score is: " + score)
+    
+    if (score === randoTarget) {
+        wins++;
+        alert("You win!")
+        $("#wins").text(wins);
+        reset();
+
+    } else if (score > randoTarget) {
+        losses++;
+        alert("You lose!")
+        $("#losses").text(losses);
+        reset();
+    }
 }
 
 $("#random-number").text(randoTarget);
